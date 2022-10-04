@@ -4,7 +4,10 @@ export const AppContainer = styled.div`
   align-items: flex-start;
   background-color: #3179ba;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  align-content: flex-start;
+  gap: 20px;
   height: 100%;
   padding: 20px;
   width: 100%;
@@ -76,10 +79,12 @@ export const ColumnContainer = styled(DragPreviewContainer)`
   background-color: #ebecf0;
   width: 300px;
   min-height: 40px;
-  margin-right: 20px;
   border-radius: 3px;
   padding: 8px 8px;
   flex-grow: 0;
+  @media (max-width: 340px) {
+    width: 100%;
+  }
 `
 
 export const CardContainer = styled(DragPreviewContainer)`

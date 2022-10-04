@@ -82,6 +82,7 @@ export const ColumnContainer = styled(DragPreviewContainer)`
   border-radius: 3px;
   padding: 8px 8px;
   flex-grow: 0;
+  cursor: grab;
   @media (max-width: 340px) {
     width: 100%;
   }
@@ -89,7 +90,7 @@ export const ColumnContainer = styled(DragPreviewContainer)`
 
 export const CardContainer = styled(DragPreviewContainer)`
   background-color: #fff;
-  cursor: pointer;
+  cursor: grab;
   margin-bottom: 0.5rem;
   padding: 0.5rem 1rem;
   max-width: 300px;
@@ -105,7 +106,7 @@ export const CustomDragLayerContainer = styled.div`
   top: 0;
   width: 100%;
   z-index: 100;
-`
+  `
 
 type DragPreviewWrapperProps = {
   position: {

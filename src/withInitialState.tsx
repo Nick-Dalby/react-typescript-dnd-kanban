@@ -14,7 +14,7 @@ export function withInitialState<TProps>(
   >
 ) {
   return (props: PropsWithoutInjected<TProps>) => {
-    const [initialState, setInitalState] = useState<AppState>({
+    const [initialState, setInitialState] = useState<AppState>({
       lists: [],
       draggedItem: null,
     })
@@ -26,7 +26,7 @@ export function withInitialState<TProps>(
       const fetchInitialState = async () => {
         try {
           const data = await load()
-          setInitalState(data)
+          setInitialState(data)
         } catch (error) {
           if (error instanceof Error) {
             setError(error)
@@ -44,7 +44,7 @@ export function withInitialState<TProps>(
     if (error) {
       return <div>{error.message}</div>
     }
-    
+
     return <WrappedComponent {...props} initialState={initialState} />
   }
 }

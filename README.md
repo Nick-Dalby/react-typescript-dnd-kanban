@@ -11,6 +11,7 @@ React and Typescript drag and drop kanban board 🗒️
 **Tech used:** HTML, CSS, JavaScript, React, Typescript, [Styled-components](https://styled-components.com/), [React DnD](https://react-dnd.github.io/react-dnd/about)
 
 Drag and drop kanban board built with React and Typescript.
+
 Features:
 
 - drag and drop using the React-DnD library
